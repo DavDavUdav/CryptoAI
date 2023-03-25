@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cryptoimg.jpg" />
+    <None Remove="source\Cryptoimg.png" />
+    <None Remove="source\Diamond.png" />
+    <None Remove="source\Exit.png" />
+    <None Remove="source\Info.png" />
+    <None Remove="source\Language.png" />
+    <None Remove="source\Notification.jpg" />
+    <None Remove="source\Notification.png" />
+    <None Remove="source\Robot.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cryptoimg.jpg" />
+    <Resource Include="Cryptoimg.png" />
+    <Resource Include="source\Diamond.png" />
+    <Resource Include="source\Exit.png" />
+    <Resource Include="source\Info.png" />
+    <Resource Include="source\Language.png" />
+    <Resource Include="source\Notification.jpg" />
+    <Resource Include="source\Notification.png" />
+    <Resource Include="source\Robot.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ishodniky\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>
