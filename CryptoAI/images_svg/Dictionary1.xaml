@@ -121,4 +121,12 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
+    <DrawingImage x:Key="notifications">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V24 H24 V0 H0 Z">
+                <GeometryDrawing Brush="#FF000000" Geometry="F1 M24,24z M0,0z M12,22C13.1,22,14,21.1,14,20L10,20C10,21.1,10.89,22,12,22z M18,16L18,11C18,7.93,16.36,5.36,13.5,4.68L13.5,4C13.5,3.17 12.83,2.5 12,2.5 11.17,2.5 10.5,3.17 10.5,4L10.5,4.68C7.63,5.36,6,7.92,6,11L6,16 4.71,17.29C4.08,17.92,4.52,19,5.41,19L18.58,19C19.47,19,19.92,17.92,19.29,17.29L18,16z" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
 </ResourceDictionary>
