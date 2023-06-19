@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CryptoAI.Page;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +49,24 @@ namespace CryptoAI
 
         private void btn_License_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void btn_My_Bots_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Profile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Login_Click(object sender, RoutedEventArgs e)
+        {
+            LogInWindow logInWindow = new LogInWindow();
+            
+            logInWindow.Show();
 
         }
     }

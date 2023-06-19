@@ -8,27 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="cryptoimg.jpg" />
-    <None Remove="source\Cryptoimg.png" />
-    <None Remove="source\Diamond.png" />
-    <None Remove="source\Exit.png" />
-    <None Remove="source\Info.png" />
-    <None Remove="source\Language.png" />
-    <None Remove="source\Notification.jpg" />
-    <None Remove="source\Notification.png" />
-    <None Remove="source\Robot.png" />
+    <None Remove="Cryptoimg.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="cryptoimg.jpg" />
-    <Resource Include="Cryptoimg.png" />
-    <Resource Include="source\Diamond.png" />
-    <Resource Include="source\Exit.png" />
-    <Resource Include="source\Info.png" />
-    <Resource Include="source\Language.png" />
-    <Resource Include="source\Notification.jpg" />
-    <Resource Include="source\Notification.png" />
-    <Resource Include="source\Robot.png" />
+    <Resource Include="Cryptoimg.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,11 +28,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ishodniky\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

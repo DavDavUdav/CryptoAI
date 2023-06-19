@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="712.5" Width="823.5"
         AllowsTransparency="True" Background="Transparent"
-        WindowStyle="None" ResizeMode="NoResize" 
+        WindowStyle="None" ResizeMode="NoResize"
+        
         >
 
     <Border 
@@ -56,7 +57,7 @@
 
                                 <Border CornerRadius="30,30,0,0">
                                     <Border.Background>
-                                        <ImageBrush Stretch="UniformToFill"  ImageSource="/Cryptoimg.jpg"/>
+                                        <ImageBrush Stretch="UniformToFill"  ImageSource="/cryptoimg.jpg"/>
                                     </Border.Background>
                                 </Border>
                             </Border>
@@ -128,7 +129,7 @@
                 <Button x:Name="btn_My_Bots" Width="165" Height="150"
                         Background="#FFFFFF"
                         Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"    
-                        Margin="22.5,12,19.5,11.25">
+                        Margin="22.5,12,19.5,11.25" Click="btn_My_Bots_Click">
 
                     <Button.Template>
                         <ControlTemplate  TargetType="Button">
@@ -182,7 +183,9 @@
                     <RowDefinition Height="173.25"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Button x:Name="btn_Profile" Width="63" Height="63"
+                <Button x:Name="btn_Profile" 
+                        Click="btn_Profile_Click"
+                        Width="63" Height="63"
                         Grid.Column="0" Grid.Row="0"
                         Margin="19.5,31.5,19.5,12">
                     <Button.Template>
@@ -337,7 +340,7 @@
                     <Grid Grid.Column="1">
                         <Button
                             
-                            Content="Login">
+                            Content="btn_Login" Click="btn_Login_Click">
                             <Button.Template>
                                 <ControlTemplate  TargetType="Button">
                                     <Grid Width="114" Height="42"

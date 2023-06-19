@@ -1,0 +1,86 @@
+﻿<Window x:Class="CryptoAI.Page.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoAI.Page"
+        mc:Ignorable="d"
+        Title="LogInWindow" Height="185" Width="177" 
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23"></RowDefinition>
+            <RowDefinition Height="39"></RowDefinition>
+            <RowDefinition Height="39"></RowDefinition>
+            <RowDefinition Height="39"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.RowSpan="5"
+                   Fill="#FDC619"
+                   RadiusX="20" RadiusY="20"></Rectangle>
+
+        <Label Grid.Row="0" 
+            Margin="59,5,63,2"
+            Padding="0"
+            FontFamily="Arial"
+            FontSize="14"
+            Content="Login in"></Label>
+
+        <Grid Grid.Row="1">
+            <Rectangle 
+            Margin="12,2,12,2"
+            RadiusX="20" RadiusY="20"
+            Fill="#fff"></Rectangle>
+
+            <Image Source="{StaticResource binance}"></Image>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.ColumnSpan="2"
+            Margin="12,2,12,2"
+            RadiusX="20" RadiusY="20"
+            Fill="#fff"></Rectangle>
+
+
+
+            <Image Grid.Column="0" Height="20" Margin="37,5,1,5" Source="{StaticResource krakenicon}"></Image>
+            <Image Grid.Column="1" Width="75" Height="13" Margin="2,13,40,13" Source="{StaticResource krakentext}"></Image>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Rectangle 
+            Margin="12,2,12,2"
+            RadiusX="20" RadiusY="20"
+            Fill="#fff"></Rectangle>
+
+            <Image Margin="30,10,40,10" Source="{StaticResource cucoin}"></Image>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.ColumnSpan="2"
+            Margin="12,2,12,7"
+            RadiusX="20" RadiusY="20"
+            Fill="#fff"></Rectangle>
+
+
+
+            <Image Grid.Column="0" Width="20" Height="20" Margin="38,10,2,15" Source="{StaticResource wallet}"></Image>
+
+            <Image Grid.Column="1" Margin="1,12,36,15" Height="15" Width="80" Source="{StaticResource Cold_Wallet}"></Image>
+
+        </Grid>
+
+    </Grid>
+</Window>
