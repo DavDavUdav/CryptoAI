@@ -29,5 +29,27 @@ namespace CryptoAI.Page
         {
             this.Close();
         }
+
+        private void btn_ColdWalletLogin_Click(object sender, RoutedEventArgs e)
+        {
+            LogInColdWalletWindow logInColdWalletWindow = new LogInColdWalletWindow();
+            logInColdWalletWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            logInColdWalletWindow.Show();
+        }
+
+        private void btn_KucoinLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_KrakenLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_BinanceLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

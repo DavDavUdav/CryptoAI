@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CryptoAI.Page
 {
     /// <summary>
-    /// Логика взаимодействия для SuccessLogin.xaml
+    /// Логика взаимодействия для LogInColdWalletWindow.xaml
     /// </summary>
-    public partial class SuccessLogin
+    public partial class LogInColdWalletWindow : Window
     {
-        public SuccessLogin()
+        public LogInColdWalletWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_ColdWalletLogin_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
