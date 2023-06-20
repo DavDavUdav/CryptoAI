@@ -54,7 +54,9 @@ namespace CryptoAI
 
         private void btn_My_Bots_Click(object sender, RoutedEventArgs e)
         {
-
+            ErrorSectionWindow errorSectionWindow = new ErrorSectionWindow();
+            errorSectionWindow.WindowStartupLocation= WindowStartupLocation.CenterScreen;
+            errorSectionWindow.Show();
         }
 
         private void btn_Profile_Click(object sender, RoutedEventArgs e)
@@ -65,9 +67,21 @@ namespace CryptoAI
         private void btn_Login_Click(object sender, RoutedEventArgs e)
         {
             LogInWindow logInWindow = new LogInWindow();
-            
+            logInWindow.WindowStartupLocation= WindowStartupLocation.CenterScreen;
             logInWindow.Show();
 
+        }
+
+        private void btn_info_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_HelpCenter_Click(object sender, RoutedEventArgs e)
+        {
+            HelpingCenterWindow helpingCenterWindow = new HelpingCenterWindow();
+            helpingCenterWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            helpingCenterWindow.Show();
         }
     }
 }

@@ -15,17 +15,17 @@ using System.Windows.Shapes;
 namespace CryptoAI.Page
 {
     /// <summary>
-    /// Логика взаимодействия для LogInWindow.xaml
+    /// Логика взаимодействия для SuccessLoginWindow.xaml
     /// </summary>
-    public partial class LogInWindow : Window
+    public partial class SuccessLoginWindow : Window
     {
-        public LogInWindow()
+        public SuccessLoginWindow()
         {
             InitializeComponent();
-            this.Deactivated += LogInWindow_Deactivated;
+            this.Deactivated += SuccessLoginWindow_Deactivated;
         }
 
-        private void LogInWindow_Deactivated(object sender, EventArgs e)
+        private void SuccessLoginWindow_Deactivated(object sender, EventArgs e)
         {
             this.Close();
         }

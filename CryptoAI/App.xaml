@@ -13,7 +13,6 @@
     </Application.Resources>
     <Application.MainWindow>
         <local:MainWindow>
-            
         </local:MainWindow>
     </Application.MainWindow>
 </Application>

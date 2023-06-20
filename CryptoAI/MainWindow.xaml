@@ -8,7 +8,7 @@
         Title="MainWindow" Height="712.5" Width="823.5"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
-        
+        WindowStartupLocation = "CenterScreen"
         >
 
     <Border 
@@ -114,7 +114,7 @@
 
                 <Button x:Name="btn_info" Width="63" Height="63"
                             Grid.Column="1" Grid.Row="0"
-                            Margin="15.5,21,13,8">
+                            Margin="15.5,21,13,8" Click="btn_info_Click">
 
                     <Button.Template>
                         <ControlTemplate  TargetType="Button">
@@ -406,7 +406,7 @@
             <Button x:Name="btn_HelpCenter" Width="165" Height="165"
                         Background="#FFFFFF"
                         Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1"    
-                        Margin="23.25,11.25,19.5,12">
+                        Margin="23.25,11.25,19.5,12" Click="btn_HelpCenter_Click">
 
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">

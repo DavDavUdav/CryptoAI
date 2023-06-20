@@ -1,0 +1,46 @@
+﻿<Window x:Class="CryptoAI.Page.FailedLoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoAI.Page"
+        mc:Ignorable="d"
+        Title="FailedLoginWindow" Height="108" Width="277.5"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Border
+        Height="108"
+        Width="277.5"
+        CornerRadius="30,30,30,30" 
+        Background="#FDC619">
+
+
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="39.75"></RowDefinition>
+                <RowDefinition Height="81*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                    Margin="67.5,10.5,67.5,6"
+                    FontFamily="Arial" 
+                    FontSize="15" 
+                    Foreground="#000"
+                    TextAlignment="Center"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">Warning</TextBlock>
+
+            <TextBlock Grid.Row="1"
+                    Margin="10.5,4,10.5,6"
+                    FontFamily="Arial" 
+                    FontSize="15" 
+                    Foreground="#000"
+                    TextAlignment="Center"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">Login Error. Incorrect mnemonic<LineBreak/> phrase or API key entered</TextBlock>
+
+
+        </Grid>
+    </Border>
+</Window>
