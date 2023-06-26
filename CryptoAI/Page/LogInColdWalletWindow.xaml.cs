@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Nethereum.HdWallet;
+using Nethereum.Web3.Accounts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +26,29 @@ namespace CryptoAI.Page
             InitializeComponent();
         }
 
-        private void btn_ColdWalletLogin_Click(object sender, RoutedEventArgs e)
+        private void btn_Done_Click(object sender, RoutedEventArgs e)
+        {
+            //string phraze = tb_mnemonicPhraze.Text;
+            string mnemonicPhrase = tb_mnemonicPhraze.Text;
+
+            // Созданике массива байтов из мнемонической фразы.
+            byte[] seed = Encoding.UTF8.GetBytes(tb_mnemonicPhraze.Text);
+            
+            // Создание кошелька на основе мнемонической фразы
+            var wallet = new Wallet(seed);
+
+            // Получение адреса первого кошелька
+            var address = wallet.GetAccount(0).Address;
+
+            Console.WriteLine($"Адрес кошелька: {address}");
+
+            // Создание объекта Account с использованием мнемонической фразы
+            var account = new Account(mnemonicPhrase);
+
+            this.Close();
+        }
+
+        private void tb_mnemonicPhraze_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

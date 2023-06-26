@@ -5,29 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoAI.Page"
         mc:Ignorable="d"
-        Title="LogInWindow" Height="185" Width="177" 
+        Title="LogInWindow" Height="358" Width="354" 
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="23"></RowDefinition>
-            <RowDefinition Height="39"></RowDefinition>
-            <RowDefinition Height="39"></RowDefinition>
-            <RowDefinition Height="39"></RowDefinition>
-            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="46"></RowDefinition>
+            <RowDefinition Height="78"></RowDefinition>
+            <RowDefinition Height="78"></RowDefinition>
+            <RowDefinition Height="78"></RowDefinition>
+            <RowDefinition Height="78"></RowDefinition>
         </Grid.RowDefinitions>
 
         <Rectangle Grid.RowSpan="5"
                    Fill="#FDC619"
-                   RadiusX="20" RadiusY="20">
+                   RadiusX="20" RadiusY="20"
+                   Stroke="Black"
+                   StrokeThickness="1">
             
         </Rectangle>
 
         <Label Grid.Row="0" 
-            Margin="59,5,63,2"
+            Margin="140,10,140,10"
             Padding="0"
             FontFamily="Arial"
-            FontSize="14"
+            FontSize="20"
             Content="Login in"></Label>
 
       <!--#region buttons-->
@@ -38,7 +40,7 @@
                     <ControlTemplate  TargetType="Button">
                         <Grid Grid.Row="1">
                             <Rectangle 
-                            Margin="12,2,12,2"
+                            Margin="12,4,12,4"
                             RadiusX="20" RadiusY="20"
                             Fill="#fff"></Rectangle>
 
@@ -56,19 +58,26 @@
                     <ControlTemplate TargetType="Button">
                         <Grid >
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="60"></ColumnDefinition>
+                                <ColumnDefinition Width="120"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
                             <Rectangle Grid.ColumnSpan="2"
-                            Margin="12,2,12,2"
+                            Margin="12,4,12,4"
                             RadiusX="20" RadiusY="20"
                             Fill="#fff"></Rectangle>
 
 
 
-                            <Image Grid.Column="0" Height="20" Margin="37,5,1,5" Source="{StaticResource krakenicon}"></Image>
-                            <Image Grid.Column="1" Width="75" Height="13" Margin="2,13,40,13" Source="{StaticResource krakentext}"></Image>
+                            <Image Grid.Column="0" 
+                                   Height="40" 
+                                   Margin="74,10,1,10" 
+                                   Source="{StaticResource krakenicon}"></Image>
+                            <Image Grid.Column="1" 
+                                   Width="150" 
+                                   Height="26" 
+                                   Margin="4,26,80,26" 
+                                   Source="{StaticResource krakentext}"></Image>
                         </Grid>
                     </ControlTemplate>
                 </Button.Template>
@@ -82,11 +91,11 @@
                     <ControlTemplate  TargetType="Button">
                         <Grid >
                             <Rectangle 
-                            Margin="12,2,12,2"
+                            Margin="12,4,12,4"
                             RadiusX="20" RadiusY="20"
                             Fill="#fff"></Rectangle>
 
-                            <Image Margin="30,10,40,10" Source="{StaticResource cucoin}"></Image>
+                            <Image Margin="60,20,80,20" Source="{StaticResource cucoin}"></Image>
                         </Grid>
                     </ControlTemplate>
                 </Button.Template>
@@ -100,19 +109,27 @@
                     <ControlTemplate  TargetType="Button">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="60"></ColumnDefinition>
+                                <ColumnDefinition Width="115"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
                             <Rectangle Grid.ColumnSpan="2"
-                                Margin="12,2,12,7"
+                                Margin="12,4,12,7"
                                 RadiusX="20" RadiusY="20"
                                 Fill="#fff">
 
                             </Rectangle>
-                            <Image Grid.Column="0" Width="20" Height="20" Margin="38,10,2,15" Source="{StaticResource wallet}"></Image>
+                            <Image Grid.Column="0" 
+                                   Width="40" 
+                                   Height="40" 
+                                   Margin="72,19,0,19" 
+                                   Source="{StaticResource wallet}"></Image>
 
-                            <Image Grid.Column="1" Margin="1,12,36,15" Height="15" Width="80" Source="{StaticResource Cold_Wallet}"></Image>
+                            <Image Grid.Column="1" 
+                                   Margin="2,24,77,24" 
+                                   Height="40" 
+                                   Width="160" 
+                                   Source="{StaticResource Cold_Wallet}"></Image>
 
                         </Grid>
                     </ControlTemplate>
