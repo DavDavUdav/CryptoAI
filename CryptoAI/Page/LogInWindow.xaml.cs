@@ -39,18 +39,24 @@ namespace CryptoAI.Page
 
         private void btn_KucoinLogin_Click(object sender, RoutedEventArgs e)
         {
+            LogInKucoinWindow logInKucoinWindow = new LogInKucoinWindow();
+            logInKucoinWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            logInKucoinWindow.Show();
 
         }
 
         private void btn_KrakenLogin_Click(object sender, RoutedEventArgs e)
         {
             LogInKrakenWindow logInKrakenWindow = new LogInKrakenWindow();
+            logInKrakenWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             logInKrakenWindow.Show();
         }
 
         private void btn_BinanceLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            LogInBinanceWindow logInBinanceWindow = new LogInBinanceWindow();
+            logInBinanceWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            logInBinanceWindow.Show();
         }
     }
 }
