@@ -28,7 +28,6 @@ namespace CryptoAI.Page
 
         private void btn_Done_Click(object sender, RoutedEventArgs e)
         {
-            //string phraze = tb_mnemonicPhraze.Text;
             string mnemonicPhrase = tb_mnemonicPhraze.Text;
 
             // Созданике массива байтов из мнемонической фразы.
@@ -46,11 +45,6 @@ namespace CryptoAI.Page
             var account = new Account(mnemonicPhrase);
 
             this.Close();
-        }
-
-        private void tb_mnemonicPhraze_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

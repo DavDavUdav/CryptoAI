@@ -44,7 +44,8 @@ namespace CryptoAI.Page
 
         private void btn_KrakenLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            LogInKrakenWindow logInKrakenWindow = new LogInKrakenWindow();
+            logInKrakenWindow.Show();
         }
 
         private void btn_BinanceLogin_Click(object sender, RoutedEventArgs e)

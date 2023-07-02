@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Microsoft.Extensions.Logging;
+using Nethereum.HdWallet;
+
 using Binance.Net;
+using Binance.Net.Clients;
+using Binance.Net.Objects;
 using CryptoExchange.Net.Authentication;
 
 namespace CryptoAI.Page
 {
+
+
     /// <summary>
     /// Логика взаимодействия для LogInBinanceWindow.xaml
     /// </summary>
@@ -34,9 +31,32 @@ namespace CryptoAI.Page
 
         private async void btn_Done_Click(object sender, RoutedEventArgs e)
         {
-            
+            string apiKey = "Your_API_Key";
+            string secretKey = "Your_Secret_Key";
+
+            // Создание клиента Binance с авторизацией
+            var client = new BinanceClient(new BinanceClientOptions()
+            {
+                ApiCredentials = new BinanceApiCredentials(apiKey, secretKey)
+            });
+
+            // Пример выполнения запроса
+            var accountInfo = client.SpotApi.Account.GetAccountInfoAsync();
+
+            //todo: убрать MessageBox.
+
+            if (accountInfo.IsCompleted)
+            {
+                MessageBox.Show("Авторизация успешна!");
+                // Добавьте дополнительную логику работы с данными аккаунта
+            }
+            else
+            {
+                MessageBox.Show("Ошибка авторизации: " + accountInfo.Exception.Message.ToString());
+            }
         }
 
         
+
     }
 }
