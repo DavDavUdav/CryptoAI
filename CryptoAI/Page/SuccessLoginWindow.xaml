@@ -24,53 +24,55 @@
             </Grid.RowDefinitions>
 
             <TextBlock Grid.Row="0"
-                    Margin="67.5,10.5,67.5,6"
-                    FontFamily="Arial" 
-                    FontSize="15" 
-                    Foreground="#000"
-                    TextAlignment="Center"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center">Warning</TextBlock>
+                       Margin="67.5,10.5,67.5,6"
+                       FontFamily="Arial" 
+                       FontSize="15" 
+                       Foreground="#000"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center">Warning</TextBlock>
 
             <TextBlock Grid.Row="1"
-                    Margin="10.5,4,10.5,6"
-                    FontFamily="Arial" 
-                    FontSize="15" 
-                    Foreground="#000"
-                    TextAlignment="Center"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center">Access from your country is denied.<LineBreak/> If you think this is an error, write to<LineBreak/> us</TextBlock>
+                       Margin="10.5,4,10.5,6"
+                       FontFamily="Arial" 
+                       FontSize="15" 
+                       Foreground="#000"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center">Access from your country is denied.<LineBreak/> If you think this is an error, write to<LineBreak/> us</TextBlock>
 
             <Grid Grid.Row="2">
-                <Button
-                            Content="Login">
-
-
+                <Button Content="Login">
                     <Button.Template>
-                        <ControlTemplate  TargetType="Button">
-                            <Grid Width="211.5" Height="37.5"
-                                        Margin="33,12,33,7.5">
+                        <ControlTemplate TargetType="Button">
+                            <Grid Width="211.5" 
+                                  Height="37.5"
+                                  Margin="33,12,33,7.5">
+                                
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
 
-                                <Rectangle Grid.ColumnSpan="2"  RadiusX="22.5" RadiusY="22.5"  Fill="#fff"  StrokeThickness="1" ></Rectangle>
+                                <Rectangle Grid.ColumnSpan="2"  
+                                           RadiusX="22.5" 
+                                           RadiusY="22.5" 
+                                           Fill="#fff"  
+                                           StrokeThickness="1"></Rectangle>
 
                                 <!--Прописать кнопку-->
 
-                                <Image Height="27" Width="21" Margin="16.5,6,12.5,6" 
-                                    Source="{StaticResource ResourceKey=mail}" 
-                                    />
+                                <Image Height="27" Width="21" 
+                                       Margin="16.5,6,12.5,6" 
+                                       Source="{StaticResource ResourceKey=mail}"/>
 
-                                <Label Grid.Column="1" HorizontalAlignment="Center"
-                                            FontFamily="Arial"
-                                            FontSize="15"
-                                            VerticalAlignment="Center"
-                                            Content="Admin@admin.com"></Label>
+                                <Label Grid.Column="1" 
+                                       HorizontalAlignment="Center"
+                                       FontFamily="Arial"
+                                       FontSize="15"
+                                       VerticalAlignment="Center"
+                                       Content="Admin@admin.com"></Label>
                             </Grid>
-
-
                         </ControlTemplate>
                     </Button.Template>
                 </Button>

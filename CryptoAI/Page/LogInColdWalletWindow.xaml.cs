@@ -30,6 +30,12 @@ namespace CryptoAI.Page
         {
             string mnemonicPhrase = tb_mnemonicPhraze.Text;
 
+            GetAccount(mnemonicPhrase);
+        }
+
+        // Получение данных от аккаунта
+        public void GetAccount(string mnemonicPhrase)
+        {
             // Созданике массива байтов из мнемонической фразы.
             byte[] seed = Encoding.UTF8.GetBytes(tb_mnemonicPhraze.Text);
             
@@ -37,7 +43,7 @@ namespace CryptoAI.Page
             var wallet = new Wallet(seed);
 
             // Получение адреса первого кошелька
-            var address = wallet.GetAccount(0).Address;
+            var address = wallet.GetAddresses(3);
 
             Console.WriteLine($"Адрес кошелька: {address}");
 

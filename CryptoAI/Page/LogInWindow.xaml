@@ -26,23 +26,25 @@
         </Rectangle>
 
         <Label Grid.Row="0" 
-            Margin="140,10,140,10"
-            Padding="0"
-            FontFamily="Arial"
-            FontSize="20"
-            Content="Login in"></Label>
+               Margin="140,10,140,10"
+               Padding="0"
+               FontFamily="Arial"
+               FontSize="20"
+               Content="Login in"></Label>
 
       <!--#region buttons-->
         <Grid Grid.Row="1">
-            <Button  
-                Content="btn_BinanceLogin" Click="btn_BinanceLogin_Click">
+            <Button Content="btn_BinanceLogin" 
+                    Click="btn_BinanceLogin_Click">
                 <Button.Template>
-                    <ControlTemplate  TargetType="Button">
+                    <ControlTemplate TargetType="Button">
                         <Grid Grid.Row="1">
-                            <Rectangle 
-                            Margin="12,4,12,4"
-                            RadiusX="20" RadiusY="20"
-                            Fill="#fff"></Rectangle>
+                            <Rectangle Margin="12,4,12,4"
+                                       RadiusX="20" 
+                                       RadiusY="20"
+                                       Fill="#fff">
+                                
+                            </Rectangle>
 
                             <Image Source="{StaticResource binance}"></Image>
                         </Grid>
@@ -52,8 +54,8 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button  
-                Content="btn_KrakenLogin" Click="btn_KrakenLogin_Click">
+            <Button Content="btn_KrakenLogin" 
+                    Click="btn_KrakenLogin_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid >
@@ -63,11 +65,9 @@
                             </Grid.ColumnDefinitions>
 
                             <Rectangle Grid.ColumnSpan="2"
-                            Margin="12,4,12,4"
-                            RadiusX="20" RadiusY="20"
-                            Fill="#fff"></Rectangle>
-
-
+                                       Margin="12,4,12,4"
+                                       RadiusX="20" RadiusY="20"
+                                       Fill="#fff"></Rectangle>
 
                             <Image Grid.Column="0" 
                                    Height="40" 
@@ -85,17 +85,18 @@
         </Grid>
 
         <Grid Grid.Row="3">
-            <Button  
-                Content="btn_KucoinLogin" Click="btn_KucoinLogin_Click">
+            <Button Content="btn_KucoinLogin" 
+                    Click="btn_KucoinLogin_Click">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid >
-                            <Rectangle 
-                            Margin="12,4,12,4"
-                            RadiusX="20" RadiusY="20"
-                            Fill="#fff"></Rectangle>
+                            <Rectangle Margin="12,4,12,4"
+                                       RadiusX="20" 
+                                       RadiusY="20"
+                                       Fill="#fff"></Rectangle>
 
-                            <Image Margin="60,20,80,20" Source="{StaticResource cucoin}"></Image>
+                            <Image Margin="60,20,80,20" 
+                                   Source="{StaticResource cucoin}"></Image>
                         </Grid>
                     </ControlTemplate>
                 </Button.Template>
@@ -103,10 +104,10 @@
         </Grid>
 
         <Grid Grid.Row="4">
-            <Button  
-                Content="btn_ColdWalletLogin" Click="btn_ColdWalletLogin_Click">
+            <Button Content="btn_ColdWalletLogin" 
+                    Click="btn_ColdWalletLogin_Click">
                 <Button.Template>
-                    <ControlTemplate  TargetType="Button">
+                    <ControlTemplate TargetType="Button">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="115"></ColumnDefinition>
@@ -114,9 +115,9 @@
                             </Grid.ColumnDefinitions>
 
                             <Rectangle Grid.ColumnSpan="2"
-                                Margin="12,4,12,7"
-                                RadiusX="20" RadiusY="20"
-                                Fill="#fff">
+                                       Margin="12,4,12,7"
+                                       RadiusX="20" RadiusY="20"
+                                       Fill="#fff">
 
                             </Rectangle>
                             <Image Grid.Column="0" 
@@ -136,30 +137,6 @@
                 </Button.Template>
             </Button>
         </Grid>
-        <!--
-        <Button Grid.Row="4" >
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Rectangle Grid.ColumnSpan="2"
-                Margin="12,2,12,7"
-                RadiusX="20" RadiusY="20"
-                Fill="#fff"></Rectangle>
-
-
-
-                <Image Grid.Column="0" Width="20" Height="20" Margin="38,10,2,15" Source="{StaticResource wallet}"></Image>
-
-                <Image Grid.Column="1" Margin="1,12,36,15" Height="15" Width="80" Source="{StaticResource Cold_Wallet}"></Image>
-
-            </Grid>
-        </Button>
-        
-        -->
-
         <!--#endregion buttons-->
         
     </Grid>

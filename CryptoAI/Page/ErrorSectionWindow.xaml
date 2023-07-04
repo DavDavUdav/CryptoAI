@@ -46,30 +46,27 @@
 
 
             <Grid Grid.Row="2">
-                <Button
-                            
-                            Content="Login" Click="Button_Click">
+                <Button 
+                    Content="Login" 
+                    Click="Button_Click">
                     <Button.Template>
-                        <ControlTemplate  TargetType="Button">
-                            <Grid Width="211.5" Height="37.5"
-                                        Margin="33,12,33,7.5" >
-
-
+                        <ControlTemplate TargetType="Button">
+                            <Grid Width="211.5" 
+                                  Height="37.5"
+                                  Margin="33,12,33,7.5" >
                                 <Rectangle  RadiusX="22.5" RadiusY="22.5" Stroke="#515151" StrokeThickness="1" ></Rectangle>
                                 <!--Прописать кнопку-->
 
                                 <Label HorizontalAlignment="Center"
-                                            FontFamily="Arial"
-                                            FontSize="15"
-                                            VerticalAlignment="Center"
-                                            Content="Login"></Label>
+                                       FontFamily="Arial"
+                                       FontSize="15"
+                                       VerticalAlignment="Center"
+                                       Content="Login"></Label>
                             </Grid>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
             </Grid>
-
-
         </Grid>
     </Border>
 </Window>

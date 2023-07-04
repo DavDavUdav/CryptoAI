@@ -28,16 +28,21 @@ namespace CryptoAI.Page
 
         private async void btn_Done_Click(object sender, RoutedEventArgs e)
         {
+            GetAccount(tb_API_Key.Text, tb_Secret_Key.Text);
+        }
+
+        // Получение данных аккаунта
+        public async void GetAccount(string tb_API_Key, string secretKey)
+        {
             var krakenRestClient = new KrakenRestClient(options =>
             {
-                options.ApiCredentials = new ApiCredentials(tb_API_Key.Text, tb_Secret_Key.Text);
+                options.ApiCredentials = new ApiCredentials(tb_API_Key, secretKey);
                 options.RequestTimeout = TimeSpan.FromSeconds(60);
             });
 
             var balanceData = await krakenRestClient.SpotApi.Account.GetBalancesAsync();
-            
-            //todo: убрать MessageBox.
-            MessageBox.Show(balanceData.Data.ToString());
+
+            this.Close();
         }
     }
 }

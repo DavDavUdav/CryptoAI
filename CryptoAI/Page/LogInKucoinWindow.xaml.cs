@@ -27,9 +27,16 @@ namespace CryptoAI.Page
 
         private async void btn_Done_Click(object sender, RoutedEventArgs e)
         {
+            
+            GetAccount(tb_API_Key.Text, tb_Secret_Key.Text, tb_Api_Passphraze.Text);
+        }
+
+        // Получение данных аккаунта
+        public async void GetAccount(string apiKey, string secretKey, string apiPassphraze)
+        {
             var kucoinRestClient = new KucoinRestClient(options =>
             {
-                options.ApiCredentials = new Kucoin.Net.Objects.KucoinApiCredentials(tb_API_Key.Text, tb_Secret_Key.Text, tb_Api_Passphraze.Text);
+                options.ApiCredentials = new Kucoin.Net.Objects.KucoinApiCredentials(apiKey, secretKey, apiPassphraze);
             });
 
             var accountData = await kucoinRestClient.SpotApi.Account.GetAccountsAsync();

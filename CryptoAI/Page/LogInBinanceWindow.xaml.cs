@@ -9,6 +9,7 @@ using Binance.Net;
 using Binance.Net.Clients;
 using Binance.Net.Objects;
 using CryptoExchange.Net.Authentication;
+using System;
 
 namespace CryptoAI.Page
 {
@@ -22,6 +23,12 @@ namespace CryptoAI.Page
         public LogInBinanceWindow()
         {
             InitializeComponent();
+            this.Deactivated += LogInBinance_Deactivated;
+        }
+
+        private void LogInBinance_Deactivated(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void tb_Secret_Key_TextChanged(object sender, TextChangedEventArgs e)
@@ -31,9 +38,15 @@ namespace CryptoAI.Page
 
         private async void btn_Done_Click(object sender, RoutedEventArgs e)
         {
-            string apiKey = "Your_API_Key";
-            string secretKey = "Your_Secret_Key";
+            string apiKey = tb_API_Key.Text;
+            string secretKey = tb_Secret_Key.Text;
 
+            GetAccount(apiKey, secretKey);
+        }
+
+        // Получение данных аккаунта
+        public void GetAccount(string apiKey, string secretKey)
+        {
             // Создание клиента Binance с авторизацией
             var client = new BinanceClient(new BinanceClientOptions()
             {
@@ -55,8 +68,6 @@ namespace CryptoAI.Page
                 MessageBox.Show("Ошибка авторизации: " + accountInfo.Exception.Message.ToString());
             }
         }
-
-        
 
     }
 }

@@ -41,35 +41,38 @@
                     HorizontalAlignment="Center">If you have any questions or<LineBreak/> suggestions, you can contact us</TextBlock>
 
             <Grid Grid.Row="2">
-                <Button
-                            Content="Login">
-
-
+                <Button Content="Login">
                     <Button.Template>
-                        <ControlTemplate  TargetType="Button">
-                            <Grid Width="211.5" Height="37.5"
-                                        Margin="33,12,33,7.5">
+                        <ControlTemplate TargetType="Button">
+                            <Grid Width="211.5" 
+                                  Height="37.5"
+                                  Margin="33,12,33,7.5">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
 
-                                <Rectangle Grid.ColumnSpan="2"  RadiusX="22.5" RadiusY="22.5"  Fill="#fff"  StrokeThickness="1" ></Rectangle>
+                                <Rectangle Grid.ColumnSpan="2" 
+                                           RadiusX="22.5" 
+                                           RadiusY="22.5"  
+                                           Fill="#fff"  
+                                           StrokeThickness="1"></Rectangle>
 
                                 <!--Прописать кнопку-->
 
-                                <Image Height="27" Width="21" Margin="16.5,6,12.5,6" 
-                                    Source="{StaticResource ResourceKey=mail}" 
+                                <Image Height="27" 
+                                       Width="21" 
+                                       Margin="16.5,6,12.5,6" 
+                                       Source="{StaticResource ResourceKey=mail}" 
                                     />
 
-                                <Label Grid.Column="1" HorizontalAlignment="Center"
-                                            FontFamily="Arial"
-                                            FontSize="15"
-                                            VerticalAlignment="Center"
-                                            Content="Admin@admin.com"></Label>
+                                <Label Grid.Column="1" 
+                                       HorizontalAlignment="Center"
+                                       FontFamily="Arial"
+                                       FontSize="15"
+                                       VerticalAlignment="Center"
+                                       Content="Admin@admin.com"></Label>
                             </Grid>
-
-
                         </ControlTemplate>
                     </Button.Template>
                 </Button>

@@ -29,7 +29,9 @@
                     Foreground="#000"
                     TextAlignment="Center"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center">Warning</TextBlock>
+                    HorizontalAlignment="Center">
+                Warning
+            </TextBlock>
 
             <TextBlock Grid.Row="1"
                     Margin="10.5,4,10.5,6"
@@ -38,9 +40,10 @@
                     Foreground="#000"
                     TextAlignment="Center"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center">Login Error. Incorrect mnemonic<LineBreak/> phrase or API key entered</TextBlock>
-
-
+                    HorizontalAlignment="Center">
+                Login Error. Incorrect mnemonic<LineBreak/> 
+                phrase or API key entered
+            </TextBlock>
         </Grid>
     </Border>
 </Window>
